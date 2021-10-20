@@ -154,7 +154,9 @@ class SecoundPricing extends StatelessWidget {
                     width: 319,
                     height: 55,
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/pricing-screen-two');
+                      },
                       style: TextButton.styleFrom(
                         shadowColor: Color(0xffE57C73),
                         elevation: 20,

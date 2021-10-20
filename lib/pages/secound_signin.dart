@@ -81,7 +81,9 @@ class SecoundSignIn extends StatelessWidget {
                     backgroundColor: Color(0xff5468FF),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(60))),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/pricing-screen');
+                },
                 child: Text(
                   'Log In',
                   style: GoogleFonts.openSans(

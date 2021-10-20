@@ -97,6 +97,9 @@ class _PricingFirstState extends State<PricingFirst> {
                               fontWeight: FontWeight.w300,
                             ),
                           ),
+                          SizedBox(
+                            width: 3,
+                          ),
                           Text(
                             subDescription,
                             style: GoogleFonts.poppins(

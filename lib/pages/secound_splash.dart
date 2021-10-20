@@ -1,7 +1,24 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sevendays/pages/secound_signin.dart';
 
-class SecoundSplahs extends StatelessWidget {
+class SecoundSplahs extends StatefulWidget {
+  @override
+  State<SecoundSplahs> createState() => _SecoundSplahsState();
+}
+
+class _SecoundSplahsState extends State<SecoundSplahs> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    Timer(Duration(seconds: 3), () {
+      Navigator.pushNamed(context, '/sign-in');
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

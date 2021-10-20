@@ -21,7 +21,12 @@ class SevenDays extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SecoundRamdom(),
+      routes: {
+        '/': (context) => SecoundSplahs(),
+        '/sign-in': (context) => SecoundSignIn(),
+        '/pricing-screen': (context) => SecoundPricing(),
+        '/pricing-screen-two': (context) => PricingFirst(),
+      },
     );
   }
 }
